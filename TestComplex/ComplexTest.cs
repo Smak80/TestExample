@@ -38,6 +38,7 @@ namespace TestComplex
         {
             get
             {
+                // Файл с данными для тестирования разместить в подпапке проекта \bin\Debug\net9.0\
                 var sr = new StreamReader("complex_test.txt", System.Text.Encoding.UTF8);
                 while (true){
                     var data = sr.ReadLine()?.Split(',', ' ', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
